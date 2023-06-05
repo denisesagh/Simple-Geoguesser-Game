@@ -1,88 +1,92 @@
-[![Cesium for Unity Logo](Images~/Cesium_for_Unity-Logo-WhiteBGH.jpg)](https://cesium.com/)
+# i3-Mainz Spiel
 
-# Cesium for Unity Samples
 
-The Cesium for Unity Samples is a starter project to learn and explore the [Cesium for Unity](https://cesium.com/platform/cesium-for-unity?utm_source=github&utm_medium=github&utm_campaign=unity) plugin.
 
-The scenes in this project will walk you through the plugin's features and demonstrate global-scale content, applications, and experiences in Unity 3D.
+## Getting started
 
-The source code for Cesium for Unity itself may be found in the [cesium-unity](https://github.com/CesiumGS/cesium-unity) repo.
+To make it easy for you to get started with GitLab, here's a list of recommended next steps.
 
-![Aerometrex Photogrammetry of San Francisco in Cesium for Unity](Images~/san_francisco.jpg)
-*<p align="center">Photogrammetry of San Francisco, California visualized in Unity, using Cesium for Unity.<br>Open the <b>03_CesiumSanFrancisco</b> scene in Cesium for Unity Samples to experience it yourself!</p>*
+Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
 
-### :rocket: Get Started
+## Add your files
 
-1. **[Download Cesium for Unity Samples](https://github.com/CesiumGS/cesium-unity-samples/releases/latest)**.
-2. Extract the `.zip` file into a suitable location on your computer.
-3. If you have [Unity Hub](https://unity.com/unity-hub) installed, click the "Open" button under the "Projects" tab. Otherwise, open the Unity Editor directly and select "Open Project". Then, point it to the extracted directory. Unity will load the project and also download Cesium for Unity using the Package Manager.
-4. In the Asset Browser, select and load `Assets -> Scenes -> 01_CesiumWorld`. You can also select other scenes as you browse and explore the samples.
+- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
+- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-Have questions? Ask them on the [community forum](https://community.cesium.com).
+```
+cd existing_repo
+git remote add origin https://gitlab.rlp.net/egia_unity_ss23/i3-mainz-spiel.git
+git branch -M main
+git push -uf origin main
+```
 
-## :mountain: Level Descriptions
+## Integrate with your tools
 
-### :one: Level 1 - Cesium World
+- [ ] [Set up project integrations](https://gitlab.rlp.net/egia_unity_ss23/i3-mainz-spiel/-/settings/integrations)
 
-The sample levels begin with a scene in San Francisco. You'll see [Cesium World Terrain](https://cesium.com/platform/cesium-ion/content/cesium-world-terrain/) and [Cesium OSM Buildings](https://cesium.com/platform/cesium-ion/content/cesium-osm-buildings/) in this scene. This level is designed to familiarize you with the core Cesium game objects and components, like Cesium World Terrain and Cesium Georeference.
+## Collaborate with your team
 
-Be sure to sign into your Cesium ion account using the Cesium button in the toolbar.
+- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
+- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
+- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
+- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-### :two: Level 2 - Melbourne Photogrammetry
+## Test and Deploy
 
-In this scene, explore high-resolution photogrammetry data of Melbourne. This data is streamed from Cesium ion with the 3D Tiles format, a spatial index for streaming massive 3D content over the web. 3D Tiles makes it possible to stream hundreds of gigabytes of data over the web using hierarchical level of detail, spatial subdivision, and runtime optimizations.
+Use the built-in continuous integration in GitLab.
 
-See how this scene was created with the [Adding Datasets tutorial](https://cesium.com/learn/unity/unity-datasets/).
+- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
+- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
+- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
+- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
+- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-### :three: Level 3 - San Francisco Photogrammetry with a Unity Character Controller
+***
 
-In this scene, explore even more high-resolution photogrammetry data of San Francisco using a third-person character controller. Whereas Melbourne allowed you to freely fly around and explore, in this scene you'll walk right up to the real-world data. When streaming content through Cesium for Unity, physics and gravity will continue to work as expected with your character controllers.
+# Editing this README
 
-Grab some cool screenshots to share with us as you explore and customize the scenes.
+When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
 
-![Photogrammetry of the Ferry Building in San Francisco, CA captured by [Aerometrex](https://aerometrex.com.au/) and visualized in Unity 3D using Cesium for Unity.](Images~/ferry_building.jpg)
-*<p align="center">Photogrammetry of the Ferry Building in San Francisco, CA captured by [Aerometrex](https://aerometrex.com.au/).<br>Open <b>03_CesiumSanFrancisco</b> in the Cesium for Unity Samples to walk around the dataset.</p>*
+## Suggestions for a good README
+Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
 
-### :four: Level 4 - Using Subscenes to Explore the World
+## Name
+Choose a self-explaining name for your project.
 
-With Cesium for Unity, you can build experiences in different locations around the world, without even changing scenes. In this level, we've added a few locations around the world that you can explore. Enter play mode and jump between locations by pressing the 1-4 keys on your keyboard. These levels are loaded in and georeferenced using the `CesiumSubScene` component.
+## Description
+Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-You can also add your own locations, like your hometown or your favorite vacation spot. Check out the [Sub-scenes tutorial](https://cesium.com/learn/unity/unity-subscenes/) to learn how.
+## Badges
+On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
 
-### :five: Level 5 - Metadata
+## Visuals
+Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-Cesium for Unity enables you to access metadata encoded in your 3D Tiles datasets. In this scene, explore the buildings in New York City and see what information is included in the tileset about each building.
+## Installation
+Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
-![Metadata of New York City buildings visualized.](Images~/metadata.jpg)
-*<p align="center">Metadata of New York City buildings visualized.<br>Open <b>05_CesiumMetadata</b> in the Cesium for Unity Samples to explore the New York City buildings' metadata.</p>*
+## Usage
+Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-### :six: Level 6 - Point Clouds
+## Support
+Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
 
-Cesium for Unity supports rendering point cloud 3D Tilesets in addition to terrain and photogrammetry datasets. In this scene, you can explore several point cloud datasets around the world. Feel free to add your own point clouds as well.
+## Roadmap
+If you have ideas for releases in the future, it is a good idea to list them in the README.
 
-![Point Cloud of Melbourne, Australia visualized using Cesium for Unity.](Images~/melbourne_point_cloud.jpg)
-*<p align="center">Point Cloud of Melbourne, Australia visualized using Cesium for Unity.<br>Open <b>06_CesiumPointClouds</b> in the Cesium for Unity Samples to explore multiple point cloud datasets, including the Melbourne Point Cloud.</p>*
+## Contributing
+State if you are open to contributions and what your requirements are for accepting them.
 
-### :seven: Level 7 - Photorealistic 3D Tiles via Google Maps Platform
+For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
 
-Explore the world through Photorealistic 3D Tiles streamed via Google Maps Platform. You can learn how to use Photorealistic 3D Tiles in your own 
-projects in the [Photorealistic 3D Tiles from Google Maps Platform tutorial](https://cesium.com/learn/unity/unity-photorealistic-3d-tiles).
+You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
 
-![The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unity.](Images~/googleplex.jpeg)
+## Authors and acknowledgment
+Show your appreciation to those who have contributed to the project.
 
-*<p align="center">The Googleplex in Mountain View, California visualized with Photorealistic 3D Tiles in Cesium for Unity.<br>Open <b>07_CesiumGoogleMapsTiles</b> in the Cesium for Unity Samples to explore the world as Photorealistic 3D Tiles.</p>*
+## License
+For open source projects, say how it is licensed.
 
-### :goggles: :one: VR Level 1 - Denver Photogrammetry
-
-Cesium for Unity supports virtual reality platforms. This level is set up for users with VR headsets to get started quickly. In this scene, explore high-resolution photogrammetry data of Denver, Colorado with VR controller support. To build this for the Oculus Quest 2, open **VR01_CesiumDenver** in the Unity Editor and follow the instructions to build an `APK` file for the headset. These instructions also appear in the UI of the scene itself.
-
-1. Ensure that your Unity Editor has Android build support. If not, follow the instructions [here](https://docs.unity3d.com/Manual/android-sdksetup.html) to set it up.
-2. Go to `File -> Build Settings` and change the platform to Android.
-3. Remove the original sample scene from the scenes list, then click the "Add Open Scenes" button.
-4. Go to `Edit -> Project Settings`. Scroll down to find and click on "XR Plug-in Management".
-5. Go to the "Android" section and check the box next to "OpenXR".
-6. Finally, in the Build Settings window, click "Build and Run" to build an `APK`.
-
-### :green_book:License
-
-[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html). Cesium for Unity Samples is free to use as starter project for both commercial and non-commercial use.
+## Project status
+If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
