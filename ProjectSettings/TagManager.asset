@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - geoBehaviourParent
+  - PointInfoCanvas
+  - "Gef\xF6rdertPlaceholder"
+  - LocationPlaceholder
+  - PartnerPlaceholder
+  - LinkPlaceholder
+  - Titel
   layers:
   - Default
   - TransparentFX
