@@ -5,6 +5,7 @@ using CesiumForUnity;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AllProjectsClickHandler : MonoBehaviour
 {
@@ -45,10 +46,10 @@ public class AllProjectsClickHandler : MonoBehaviour
 
                 string gameObjectName = hit.collider.gameObject.name;
                 print(gameObjectName);
-                
-                
-                
-                switch (gameObjectName)
+
+
+                SceneManager.LoadScene(sceneName: "PlaceInformation");
+                /*switch (gameObjectName)
                 {
                     
                     case "SyrienPointer":
@@ -88,7 +89,7 @@ public class AllProjectsClickHandler : MonoBehaviour
                         return;
                     }
                     return;
-                }
+                }*/
 
             }
         }
