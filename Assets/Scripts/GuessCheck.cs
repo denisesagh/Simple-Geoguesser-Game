@@ -65,13 +65,14 @@ public class GuessCheck : MonoBehaviour
         ItalienPointer.SetActive(true);
         SyrienPointer.SetActive(true);
         FrancePointer.SetActive(true);
-
-        ZimbabwePointer.GetComponent<Renderer>().enabled = true;
-        TürkeiPointer.GetComponent<Renderer>().enabled = true;
-        KrimPointer.GetComponent<Renderer>().enabled = true;
-        ItalienPointer.GetComponent<Renderer>().enabled = true;
-        SyrienPointer.GetComponent<Renderer>().enabled = true;
-        FrancePointer.GetComponent<Renderer>().enabled = true;
+        
+        SetRendererEnabledRecursive(TürkeiPointer, true);
+        SetRendererEnabledRecursive(ZimbabwePointer, true);
+        SetRendererEnabledRecursive(KrimPointer, true);
+        SetRendererEnabledRecursive(ItalienPointer, true);
+        SetRendererEnabledRecursive(SyrienPointer, true);
+        SetRendererEnabledRecursive(FrancePointer, true);
+        
         
   
 
@@ -138,6 +139,7 @@ public class GuessCheck : MonoBehaviour
                     
                     //flyToPointer.ShowTarget();
                     revealPoints();
+                    print("Geht");
                     
                     dialogManager.StartDialog("Richtig geraten!");
 

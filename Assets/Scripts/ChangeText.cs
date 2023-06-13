@@ -43,7 +43,7 @@ public class ChangeText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string location = PlayerPrefs.GetString("location");
+        string location = PlayerPrefs.GetString("infoPointer");
         if (location == null)
         {
             location = "Zimbabwe";

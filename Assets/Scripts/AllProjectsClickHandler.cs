@@ -48,49 +48,50 @@ public class AllProjectsClickHandler : MonoBehaviour
                 print(gameObjectName);
                 
                 
-                SceneManager.LoadScene(sceneName: "PlaceInformation");
-                /*
+             
+                
                 switch (gameObjectName)
                 {
                     
                     case "SyrienPointer":
                     {
-                        titlePlaceholder.text = "Mediale Verdeutlichung der Ergebnisse und Tätigkeiten im Kontext der archäologischen Ausgrabung zu Qatna";
-                        locationPlaceholder.text = "Qatna (Syrien)";
-                        gefördertPlaceholder.text = "DFG";
-                        partnerPlaceholder.text = "Universität Tübingen";
-                        linkPlaceholder.text = "i3mainz";
-                        pointerInfoUI.SetActive(true);
+                        PlayerPrefs.SetString("infoPointer", "Syrien");
+                        SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
                     case "ZimbabwePointer":
                     {
-                        titlePlaceholder.text = "The Past in the Present";
-                        locationPlaceholder.text = "Zimbabwe (Afrika)";
-                        gefördertPlaceholder.text = "Volkswagen Stiftung";
-                        partnerPlaceholder.text = "University of Zimbabw";
-                        linkPlaceholder.text = "i3mainz";
-                        pointerInfoUI.SetActive(true);
+                        PlayerPrefs.SetString("infoPointer", "Zimbabwe");
+                        SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
                     case "TürkeiPointer":
                     {
+                        PlayerPrefs.SetString("infoPointer", "Türkei");
+                        SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
                     case "FrancePointer":
                     {
+                        PlayerPrefs.SetString("infoPointer", "France");
+                        SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
                     case "KrimPointer":
                     {
+                        PlayerPrefs.SetString("infoPointer", "Krim");
+                        SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
                     case "ItalienPointer":
                     {
+                        PlayerPrefs.SetString("infoPointer", "Italien");
+                        SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
                     return;
-                }*/
+                }
+                
 
             }
         }
