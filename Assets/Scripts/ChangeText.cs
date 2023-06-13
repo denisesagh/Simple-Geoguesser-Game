@@ -43,36 +43,41 @@ public class ChangeText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string cuurentlocation = "Zimbabwe (Afrika)";
-        string[,] data = new string[,] { };
-        switch (cuurentlocation)
+        string location = PlayerPrefs.GetString("location");
+        if (location == null)
         {
-            case "Zimbabwe (Afrika)":
+            location = "Zimbabwe";
+        }
+        string[,] data = new string[,] { };
+        print(location);
+        switch (location)
+        {
+            case "Zimbabwe":
                 data = zimbabweData;
                 // Perform specific operations with zimbabweData
                 break;
 
-            case "Hafenstadt Ainos (Türkei)":
+            case "Türkei":
                 data = hafenstadtAinosData;
                 // Perform specific operations with hafenstadtAinosData
                 break;
 
-            case "Château de Germolles (Frankreich)":
+            case "France":
                 data = germollesData;
                 // Perform specific operations with germollesData
                 break;
 
-            case "Eski-Kermen und Mangup-Kale (Krim)":
+            case "Krim":
                 data = eskiKermenData;
                 // Perform specific operations with eskiKermenData
                 break;
 
-            case "Monte Bisenzio (Italien)":
+            case "Italien":
                 data = monteBisenzioData;
                 // Perform specific operations with monteBisenzioData
                 break;
 
-            case "Qatna (Syrien)":
+            case "Syrien":
                 data = qatnaData;
                 // Perform specific operations with qatnaData
                 break;
