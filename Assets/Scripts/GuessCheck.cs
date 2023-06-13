@@ -26,9 +26,8 @@ public class GuessCheck : MonoBehaviour
     private CesiumGeoreference georeference;
     private String rightLocation;
     private DialogManager dialogManager;
-    private FlyToPointer flyToPointer;
 
-    private GameObject target;
+    
 
     
     
@@ -38,8 +37,7 @@ public class GuessCheck : MonoBehaviour
         georeference = FindObjectOfType<CesiumGeoreference>();
         rightLocation = PlayerPrefs.GetString("location");
         dialogManager = FindObjectOfType<DialogManager>();
-        target = GameObject.Find(rightLocation+"Pointer");
-        flyToPointer = FindObjectOfType<FlyToPointer>();
+  
 
     }
     
@@ -148,7 +146,7 @@ public class GuessCheck : MonoBehaviour
                 {
                     print("Falsch geraten es war " + rightLocation + " und du hast " + gameObjectName
                           + "geraten");
-                    transform.position = target.transform.position;
+                   
                     revealPoints();
                     dialogManager.StartDialog("Falsch geraten! Es war " + rightLocation);
                     
