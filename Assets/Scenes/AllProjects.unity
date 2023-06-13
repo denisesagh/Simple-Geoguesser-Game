@@ -195,29 +195,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ede867171771d4fb131a37e6536288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5863104
-MonoBehaviour:
+--- !u!136 &5863107
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5863097}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fb14bb7f371fa4ab305023b89b0203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctLat: 
-  correctLong: 
-  correctLocation: 
-  playmode: 0
-  pointerInfoUI: {fileID: 1655885534}
-  titel: 
-  location: 
-  "gef\xF6rdert": 
-  partner: 
-  link: 
-  titlePlaceholder: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02331158
+  m_Height: 0.040164612
+  m_Direction: 1
+  m_Center: {x: 3.9583503e-10, y: 0.00058520865, z: -0.0011349148}
 --- !u!1 &93358812
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +220,8 @@ GameObject:
   - component: {fileID: 93358815}
   - component: {fileID: 93358816}
   - component: {fileID: 93358817}
+  - component: {fileID: 93358818}
+  - component: {fileID: 93358819}
   m_Layer: 0
   m_Name: ScriptContainer
   m_TagString: Untagged
@@ -276,6 +269,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca843f554a3a4ef4a7b326698751b88c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &93358818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93358812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1897f9e91877974f94d4b45ba9e87cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "T\xFCrkeiPointer": {fileID: 0}
+  ZimbabwePointer: {fileID: 0}
+  KrimPointer: {fileID: 0}
+  ItalienPointer: {fileID: 0}
+  SyrienPointer: {fileID: 0}
+  FrancePointer: {fileID: 0}
+--- !u!114 &93358819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93358812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd02951ae5f4cbcb03d2d48898bc526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationPlaceholder: {fileID: 2131637746}
+  "gef\xF6rdertPlaceholder": {fileID: 1548290281}
+  partnerPlaceholder: {fileID: 1519725293}
+  linkPlaceholder: {fileID: 1433273827}
+  titlePlaceholder: {fileID: 363417170}
+  pointerInfoUI: {fileID: 1655885534}
+  controller: {fileID: 0}
 --- !u!1 &239951172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1c19dcb36df29ac40b1dc210d6335e28,
@@ -288,29 +318,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 249243995}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &239951174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239951172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fb14bb7f371fa4ab305023b89b0203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctLat: 
-  correctLong: 
-  correctLocation: 
-  playmode: 0
-  pointerInfoUI: {fileID: 1655885534}
-  titel: hallo
-  location: 
-  "gef\xF6rdert": 
-  partner: 
-  link: 
-  titlePlaceholder: {fileID: 363417170}
 --- !u!114 &239951175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -371,22 +378,8 @@ MonoBehaviour:
       z: 3726008.6935009854
       w: 1
   _localToGlobeFixedMatrixIsValid: 1
---- !u!64 &239951178
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239951172}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -462981019419857548, guid: 1c19dcb36df29ac40b1dc210d6335e28, type: 3}
---- !u!135 &239951181
-SphereCollider:
+--- !u!136 &239951188
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -395,33 +388,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.020082306
-  m_Center: {x: 4.6348123e-10, y: 0.00058520865, z: -0.0011349148}
---- !u!65 &239951184
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239951172}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.02662315, y: 0.04016461, z: 0.02270171}
+  m_Radius: 0.02331158
+  m_Height: 0.040164612
+  m_Direction: 1
   m_Center: {x: 4.3950044e-10, y: 0.00058520865, z: -0.0011349147}
---- !u!154 &239951185
-TerrainCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239951172}
-  m_Material: {fileID: 0}
-  m_Enabled: 1
-  m_TerrainData: {fileID: 0}
-  m_EnableTreeColliders: 1
 --- !u!1001 &249243995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1038,7 +1008,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701986134}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 275ecd2d59d942d41bf31252981978e0, type: 3}
   m_Name: 
@@ -1181,7 +1151,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701986134}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b621ff6a9d4b8c4d85ac07de7f8b4b9, type: 3}
   m_Name: 
@@ -1284,7 +1254,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701986134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5a1808cafb7539849a6930fb66730be5, type: 3}
   m_Name: 
@@ -1953,29 +1923,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ede867171771d4fb131a37e6536288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &956544890
-MonoBehaviour:
+--- !u!136 &956544893
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956544883}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fb14bb7f371fa4ab305023b89b0203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctLat: 
-  correctLong: 
-  correctLocation: 
-  playmode: 0
-  pointerInfoUI: {fileID: 1655885534}
-  titel: 
-  location: 
-  "gef\xF6rdert": 
-  partner: 
-  link: 
-  titlePlaceholder: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02331158
+  m_Height: 0.040164612
+  m_Direction: 1
+  m_Center: {x: 4.296581e-10, y: 0.00058520865, z: -0.0011349149}
 --- !u!1 &1020753064
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,29 +2357,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ede867171771d4fb131a37e6536288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1063826122
-MonoBehaviour:
+--- !u!136 &1063826125
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063826114}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fb14bb7f371fa4ab305023b89b0203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctLat: 
-  correctLong: 
-  correctLocation: 
-  playmode: 0
-  pointerInfoUI: {fileID: 1655885534}
-  titel: 
-  location: 
-  "gef\xF6rdert": 
-  partner: 
-  link: 
-  titlePlaceholder: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02331158
+  m_Height: 0.040164612
+  m_Direction: 1
+  m_Center: {x: 4.732915e-10, y: 0.00058520865, z: -0.0011349148}
 --- !u!1 &1074540913
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,7 +2586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 130.86525}
+  m_AnchoredPosition: {x: 0, y: 129.25075}
   m_SizeDelta: {x: 14.375, y: 503.1111}
   m_Pivot: {x: 0, y: 1}
 --- !u!1001 &1082078463
@@ -2885,8 +2837,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 883402594}
   m_HandleRect: {fileID: 883402593}
   m_Direction: 2
-  m_Value: -0.010246784
-  m_Size: 0.0011045164
+  m_Value: 0.0034169238
+  m_Size: 0.7413868
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3453,29 +3405,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverMessage: Hover Text
   textFieldPrefab: {fileID: 803959365}
---- !u!114 &1324075106
-MonoBehaviour:
+--- !u!136 &1324075110
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324075098}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fb14bb7f371fa4ab305023b89b0203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctLat: 
-  correctLong: 
-  correctLocation: 
-  playmode: 0
-  pointerInfoUI: {fileID: 1655885534}
-  titel: 
-  location: 
-  "gef\xF6rdert": 
-  partner: 
-  link: 
-  titlePlaceholder: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02331158
+  m_Height: 0.040164612
+  m_Direction: 1
+  m_Center: {x: -0.000000014392956, y: 0.0005852086, z: -0.0011349745}
 --- !u!1 &1361092602
 GameObject:
   m_ObjectHideFlags: 0
@@ -4677,29 +4620,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45ede867171771d4fb131a37e6536288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1678814771
-MonoBehaviour:
+--- !u!136 &1678814774
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1678814764}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9fb14bb7f371fa4ab305023b89b0203, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  correctLat: 
-  correctLong: 
-  correctLocation: 
-  playmode: 0
-  pointerInfoUI: {fileID: 1655885534}
-  titel: 
-  location: 
-  "gef\xF6rdert": 
-  partner: 
-  link: 
-  titlePlaceholder: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.02331158
+  m_Height: 0.04016461
+  m_Direction: 1
+  m_Center: {x: 4.929442e-10, y: 0.0005852086, z: -0.0011349148}
 --- !u!1 &1733001362
 GameObject:
   m_ObjectHideFlags: 0

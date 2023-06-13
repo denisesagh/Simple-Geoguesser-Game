@@ -28,12 +28,14 @@ public class OnClickListener : MonoBehaviour
     public String partner;
     public String link;
 
-    //public GameObject titelPlaceholder;
-    /*public TextMeshPro locationPlaceholder;
-    public TextMeshPro gefördertPlaceholder;
-    public TextMeshPro partnerPlaceholder;
-    public TextMeshPro linkPlaceholder;
-    */
+    [SerializeField] 
+    public TextMeshProUGUI locationPlaceholder;
+    [SerializeField] 
+    public TextMeshProUGUI gefördertPlaceholder;
+    [SerializeField] 
+    public TextMeshProUGUI partnerPlaceholder;
+    [SerializeField] 
+    public TextMeshProUGUI linkPlaceholder;
     [SerializeField] 
     private TextMeshProUGUI titlePlaceholder;
         
@@ -71,11 +73,11 @@ public class OnClickListener : MonoBehaviour
                     pointerInfoUI.SetActive(true);
 
                     titlePlaceholder.text = titel;
-                    /*locationPlaceholder.text = location;
+                    locationPlaceholder.text = location;
                     gefördertPlaceholder.text = gefördert;
                     partnerPlaceholder.text = partner;
                     linkPlaceholder.text = link;
-                    */
+                    
                     pointerInfoUI.SetActive(true);
                 }
             }
