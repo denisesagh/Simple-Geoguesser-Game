@@ -148,7 +148,7 @@ public class GuessCheck : MonoBehaviour
                 {
                     print("Falsch geraten es war " + rightLocation + " und du hast " + gameObjectName
                           + "geraten");
-                    transform.position = target.transform.position;
+                   
                     revealPoints();
                     dialogManager.StartDialog("Falsch geraten! Es war " + rightLocation);
                     
