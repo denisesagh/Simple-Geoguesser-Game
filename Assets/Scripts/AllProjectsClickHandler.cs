@@ -5,6 +5,7 @@ using CesiumForUnity;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AllProjectsClickHandler : MonoBehaviour
 {
@@ -47,7 +48,8 @@ public class AllProjectsClickHandler : MonoBehaviour
                 print(gameObjectName);
                 
                 
-                
+                SceneManager.LoadScene(sceneName: "PlaceInformation");
+                /*
                 switch (gameObjectName)
                 {
                     
@@ -88,7 +90,7 @@ public class AllProjectsClickHandler : MonoBehaviour
                         return;
                     }
                     return;
-                }
+                }*/
 
             }
         }
