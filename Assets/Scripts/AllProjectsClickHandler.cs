@@ -46,10 +46,11 @@ public class AllProjectsClickHandler : MonoBehaviour
 
                 string gameObjectName = hit.collider.gameObject.name;
                 print(gameObjectName);
-
-
+                
+                
                 SceneManager.LoadScene(sceneName: "PlaceInformation");
-                /*switch (gameObjectName)
+                /*
+                switch (gameObjectName)
                 {
                     
                     case "SyrienPointer":
