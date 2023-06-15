@@ -1783,6 +1783,9 @@ MonoBehaviour:
   title: {fileID: 1689027057}
   partner: {fileID: 1416743112}
   gefordertDurch: {fileID: 800213535}
+  distanzNachMainz: {fileID: 938827968}
+  openLinkButton: {fileID: 771764356}
+  url: 
 --- !u!1 &2081404041
 GameObject:
   m_ObjectHideFlags: 0
