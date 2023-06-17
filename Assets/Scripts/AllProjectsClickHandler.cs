@@ -11,18 +11,6 @@ public class AllProjectsClickHandler : MonoBehaviour
 {
     private Camera mainCamera;
     private CesiumGeoreference georeference;
-    [SerializeField] 
-    public TextMeshProUGUI locationPlaceholder;
-    [SerializeField] 
-    public TextMeshProUGUI gefördertPlaceholder;
-    [SerializeField] 
-    public TextMeshProUGUI partnerPlaceholder;
-    [SerializeField] 
-    public TextMeshProUGUI linkPlaceholder;
-    [SerializeField] 
-    private TextMeshProUGUI titlePlaceholder;
-    public GameObject pointerInfoUI;
-
     public CesiumCameraController controller;
     
     private void Start()
@@ -53,37 +41,37 @@ public class AllProjectsClickHandler : MonoBehaviour
                 switch (gameObjectName)
                 {
                     
-                    case "SyrienPointer":
+                    case "SyrienPointerAll":
                     {
                         PlayerPrefs.SetString("infoPointer", "Syrien");
                         SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
-                    case "ZimbabwePointer":
+                    case "ZimbabwePointerAll":
                     {
                         PlayerPrefs.SetString("infoPointer", "Zimbabwe");
                         SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
-                    case "TürkeiPointer":
+                    case "TürkeiPointerAll":
                     {
                         PlayerPrefs.SetString("infoPointer", "Türkei");
                         SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
-                    case "FrancePointer":
+                    case "FrancePointerAll":
                     {
                         PlayerPrefs.SetString("infoPointer", "France");
                         SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
-                    case "KrimPointer":
+                    case "KrimPointerAll":
                     {
                         PlayerPrefs.SetString("infoPointer", "Krim");
                         SceneManager.LoadScene(sceneName: "PlaceInformation");
                         return;
                     }
-                    case "ItalienPointer":
+                    case "ItalienPointerAll":
                     {
                         PlayerPrefs.SetString("infoPointer", "Italien");
                         SceneManager.LoadScene(sceneName: "PlaceInformation");
