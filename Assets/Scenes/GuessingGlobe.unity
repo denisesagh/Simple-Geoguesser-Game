@@ -823,24 +823,24 @@ MonoBehaviour:
   _detectTransformChanges: 1
   _localToGlobeFixedMatrix:
     c0:
-      x: 0.1607043217923446
-      y: 0.9866443585836525
-      z: 0.027298102301003907
+      x: 0.16883247655285225
+      y: 0.9848545925376405
+      z: 0.03993970380928948
       w: 0
     c1:
-      x: -0.8128979588572286
-      y: 0.11661709520400251
-      z: 0.570610204463486
+      x: -0.8164604578973989
+      y: 0.11703504662510515
+      z: 0.5654150477816405
       w: 0
     c2:
-      x: -0.5598049461775825
-      y: 0.11388990248858773
-      z: -0.8207806374203284
+      x: -0.5521763069637595
+      y: 0.12806939006801282
+      z: -0.8238527243607238
       w: 0
     c3:
-      x: 6606036.617232274
-      y: 591001.3059110916
-      z: 8291790.8474895945
+      x: 4697027.701265984
+      y: 314988.16074998176
+      z: 5994074.219517494
       w: 1
   _localToGlobeFixedMatrixIsValid: 1
 --- !u!114 &291093876
@@ -978,9 +978,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291093872}
-  m_LocalRotation: {x: 0.7312401, y: 0.15237175, z: -0.006692774, w: 0.66485035}
-  m_LocalPosition: {x: -360382, y: 4242263, z: 280000}
-  m_LocalScale: {x: 1.0000191, y: 0.99999934, z: 1.0000167}
+  m_LocalRotation: {x: 0.73338825, y: 0.15724763, z: -0.0015243245, w: 0.66137177}
+  m_LocalPosition: {x: -360382, y: 1242263, z: 280000}
+  m_LocalScale: {x: 1.0000191, y: 0.9999995, z: 1.0000169}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 727159856}
@@ -1428,7 +1428,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671522138}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.37590045}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1438,7 +1438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 229.99219, y: -169.96094}
+  m_AnchoredPosition: {x: 290, y: 189}
   m_SizeDelta: {x: 200, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671522140
@@ -1604,7 +1604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1737,20 +1737,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 893089041}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &893089044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 893089043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eca7fee3fbe8e74aa339f34f72feb88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hoverMessage: Hover Text
-  textFieldPrefab: {fileID: 555148318}
 --- !u!114 &893089045
 MonoBehaviour:
   m_ObjectHideFlags: 0

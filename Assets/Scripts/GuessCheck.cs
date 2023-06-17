@@ -66,14 +66,6 @@ public class GuessCheck : MonoBehaviour
         SyrienPointer.SetActive(true);
         FrancePointer.SetActive(true);
         
-        SetRendererEnabledRecursive(TürkeiPointer, true);
-        SetRendererEnabledRecursive(ZimbabwePointer, true);
-        SetRendererEnabledRecursive(KrimPointer, true);
-        SetRendererEnabledRecursive(ItalienPointer, true);
-        SetRendererEnabledRecursive(SyrienPointer, true);
-        SetRendererEnabledRecursive(FrancePointer, true);
-        
-        
   
 
         switch (rightLocation)
@@ -137,7 +129,7 @@ public class GuessCheck : MonoBehaviour
                     print("Richtig geraten es war " + rightLocation + " und du hast " + gameObjectName
                     + "geraten");
                     
-                    //flyToPointer.ShowTarget();
+               
                     revealPoints();
                     print("Geht");
                     
